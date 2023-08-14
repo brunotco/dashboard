@@ -3,9 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo.jpg">
     <title>Dashboard</title>
 </head>
 <body>
-    
+    <div class="container">
+        <!-- Sidebar -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="assets/logo.jpg" alt="logo">
+                    <h2>Mako<span class="theme-color">Tech</span></h2>
+                </div>
+                <div class="close">
+                    <span class="material-symbols-rounded">
+                        close
+                    </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-symbols-rounded">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-rounded">
+                        description
+                    </span>
+                    <h3>Data</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-rounded">
+                        person
+                    </span>
+                    <h3>Users</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-rounded">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-rounded">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- Sidebar -->
+        <!-- Main -->
+        <main>
+            <div class="nav">
+                <div class="top">
+                    <button class="menu">
+                        <span class="material-symbols-rounded">
+                            menu
+                        </span>
+                    </button>
+                    <div class="mode">
+                        <span class="material-symbols-rounded active">
+                            light_mode
+                        </span>
+                        <span class="material-symbols-rounded">
+                            dark_mode
+                        </span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hi, <b>User</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="assets/logo.jpg" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>Examples</h1>
+            <!-- Examples -->
+            <div class="content">
+                <div class="card">
+                    <h2>Vertical</h2>
+                    <h3>This content is normal</h3>
+                </div>
+                <div class="card centered">
+                    <h2>Centered</h2>
+                    <h3>This content is like vertical but to the center</h3>
+                </div>
+                <div class="card horizontal">
+                    <h2>Horizontal</h2>
+                    <h3>This content is horizontal</h3>
+                </div>
+                <div class="card horizontal-center">
+                    <h2>Horizontal center</h2>
+                    <h3>This content is centered horizontally</h3>
+                </div>
+                <div class="card horizontal-spread">
+                    <h2>Horizontal spread</h2>
+                    <h3>This content is spread horizontally</h3>
+                </div>
+            </div>
+            <!-- Examples -->
+            <!-- Products -->
+            <div class="content">
+                <div class="card">
+                    <h2>Products</h2>
+                    <table class="products">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Qnt</th>
+                                <th>Availability</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <a class="extend" href="#">Show more</a>
+            </div>
+            <!-- Products -->
+        </main>
+        <!-- Main -->
+    </div>
 </body>
+<script src="js/mock.js"></script>
+<script src="js/main.js"></script>
 </html>
