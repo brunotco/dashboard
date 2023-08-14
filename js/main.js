@@ -1,3 +1,17 @@
+const sideBar = document.querySelector('aside');
+const menuBtn = document.querySelector('.menu');
+const closeBtn = document.querySelector('.close');
+
+
+
+menuBtn.addEventListener('click', () => {
+    sideMenu.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', () => {
+    sideMenu.style.display  ='none';
+});
+
 // Theme changer
 const theme = document.querySelector('.theme');
 theme.addEventListener('click', () => {
