@@ -311,51 +311,51 @@ table {
     }
 }
 
-.nav {
+nav {
+    & .top {
+        display: flex;
+        justify-content: end;
+        gap: 2rem; 
+        & button {
+            display: none;
+        }
+       & .profile {
+            display: flex;
+            gap: 2rem;
+            text-align: right;
+            & .profile-photo {
+                width: 2.8rem;
+                height: 2.8rem;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+        }
+    }
+    & .theme {
+        background-color: var(--color-light);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 1.6rem;
+        width: 4.2rem;
+        cursor: pointer;
+        border-radius: var(--border-radius-1);
+        & span {
+            font-size: 1.2rem;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.active {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border-radius: var(--border-radius-1);
+            }
+        }
+    }
+}
 
-}
-.nav .top {
-    display: flex;
-    justify-content: end;
-    gap: 2rem;
-}
-.nav .top button {
-    display: none;
-}
-.nav .theme {
-    background-color: var(--color-light);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 1.6rem;
-    width: 4.2rem;
-    cursor: pointer;
-    border-radius: var(--border-radius-1);
-}
-.nav .theme span {
-    font-size: 1.2rem;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.nav .theme span.active {
-    background-color: var(--color-theme);
-    color: var(--color-white);
-    border-radius: var(--border-radius-1);
-}
-.nav .top .profile {
-    display: flex;
-    gap: 2rem;
-    text-align: right;
-}
-.nav .top .profile .profile-photo {
-    width: 2.8rem;
-    height: 2.8rem;
-    border-radius: 50%;
-    overflow: hidden;
-}
 /* Mobile nav */
 /* .nav {
     width: 94%;
