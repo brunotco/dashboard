@@ -322,7 +322,7 @@ table {
 .nav .top button {
     display: none;
 }
-.nav .mode {
+.nav .theme {
     background-color: var(--color-light);
     display: flex;
     justify-content: space-between;
@@ -332,7 +332,7 @@ table {
     cursor: pointer;
     border-radius: var(--border-radius-1);
 }
-.nav .mode span {
+.nav .theme span {
     font-size: 1.2rem;
     width: 50%;
     height: 100%;
@@ -340,7 +340,7 @@ table {
     align-items: center;
     justify-content: center;
 }
-.nav .mode span.active {
+.nav .theme span.active {
     background-color: var(--color-theme);
     color: var(--color-white);
     border-radius: var(--border-radius-1);

@@ -1,3 +1,13 @@
+// Theme changer
+const theme = document.querySelector('.theme');
+theme.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+    for (const child of theme.children) {
+        child.classList.toggle('active');
+    }
+});
+
+// Populate products table
 Products.forEach(product => {
     const tr = document.createElement('tr');
     const trData = `
