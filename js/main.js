@@ -1,3 +1,4 @@
+// Sidebar mobile controller
 const sideBar = document.querySelector('aside');
 const menuBtn = document.querySelector('.menu');
 const closeBtn = document.querySelector('.close');
