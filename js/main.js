@@ -2,14 +2,12 @@ const sideBar = document.querySelector('aside');
 const menuBtn = document.querySelector('.menu');
 const closeBtn = document.querySelector('.close');
 
-
-
 menuBtn.addEventListener('click', () => {
-    sideMenu.style.display = 'block';
+    sideBar.style.display = 'block';
 });
 
 closeBtn.addEventListener('click', () => {
-    sideMenu.style.display  ='none';
+    sideBar.style.display  ='none';
 });
 
 // Theme changer
@@ -26,8 +24,9 @@ Products.forEach(product => {
     const tr = document.createElement('tr');
     const trData = `
         <td>${product.name}</td>
+        <td class="mobile-hide">${product.number}</td>
         <td>${product.price}</td>
-        <td>${product.quantity}</td>
+        <td class="mobile-hide">${product.quantity}</td>
         <td>
             <div class="circle ${product.quantity > 5 ? 'full' : product.quantity > 0 ? 'half' : 'empty'}"></div>
         </td>
