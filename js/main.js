@@ -3,11 +3,11 @@ const menuBtn = document.querySelector('.menu');
 const closeBtn = document.querySelector('.close');
 
 menuBtn.addEventListener('click', () => {
-    sideBar.style.display = 'block';
+    sideBar.classList.toggle('show');
 });
 
 closeBtn.addEventListener('click', () => {
-    sideBar.style.display  ='none';
+    sideBar.classList.toggle('show');
 });
 
 // Theme changer
